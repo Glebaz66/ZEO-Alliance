@@ -1,0 +1,27 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin:0;
+    padding: 0;
+    width: 100%;
+  }
+
+// @import "vars";
+// @import "fonts";
+// @import "libs";
+// @import "mixins";
+
+@import "./components/_modal.scss";
+
+
+
+
+
+
+
+
+
+

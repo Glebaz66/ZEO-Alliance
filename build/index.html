@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ZEO</title>
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="img/favicon/favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700,900&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/stylesheet.css" rel="stylesheet">
+</head>
+<body>
+    <input type="checkbox" id="toggle">
+    <label for="toggle">uninstall shazam</label>
+    
+    <dialog class="modal">
+        <label for="toggle" class="close"><img src="./svg/icon-popup-close.svg" alt=""></label>
+        <div class="modal__img"><img src="./svg/icon-warning_notify-red.svg" alt=""></div>
+        <div class="modal__text">
+            <p class="modal__text--grey">Are you sure you want to uninstall the Shazam app</p>
+        </div>
+        
+        <div class="modal__buttons">
+            <label for="toggle">Cancel</label>
+            <label for="alert" onclick="alert('Done')">Uninstall</label>
+        </div>
+    </dialog>
+    <div class="modal__cover"></div>
+</body>
+</html>

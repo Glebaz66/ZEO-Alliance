@@ -1,0 +1,86 @@
+#toggle{
+    visibility: hidden;
+    opacity: 0;
+    position: relative;
+    z-index: -1;
+}
+
+  #toggle:checked ~ dialog {
+      display: block;
+  }
+  #toggle:checked ~ .modal__cover {
+      display: block;
+      width: 100vw;
+      background-color: rgba(80, 80, 80, 0.315);
+      position: absolute;
+      top: -18px;
+      left: 0px;
+      bottom: 0;
+      right: 0;
+      z-index: -1;
+}
+
+label{
+    background: rgba(255, 0, 0, 0);
+        color: rgb(90, 90, 90);
+        padding: 10px 30px;
+        border: 1px solid rgba(90, 90, 90, .3);
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    
+    .close {
+        padding: 0;
+        background: none;
+        border: none;
+    }
+    .modal {
+        &__img {
+            width: 100px;
+            margin: 0 auto;
+            
+            img {
+                width: 100px;
+            }
+        }
+        &__text {
+            width: 70%;
+            margin: 0 auto 30px;
+            &--grey{
+                
+                text-align: center;
+                font-size: 22px;
+                color: rgb(112, 112, 112);
+            }
+        }
+        &__buttons {
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+            
+            label{
+                width: 100px;
+                
+                &:hover{
+                    background-color: red;
+                    color: #fff;
+                }
+            }
+        }
+        &__cover{
+            display: none;
+        }
+    }
+    @keyframes show {
+        0%{
+            opacity: 0;
+            transform: translateY(-20px);
+    }
+  }
+  
+  dialog{
+        animation: show 300ms ease-in-out 1;
+        border: none;
+        max-width: 500px;
+        border-radius: 10px;
+  }
